@@ -176,7 +176,7 @@ button{
 
 <script>
 
-const SCRIPT_URL = https://script.google.com/macros/s/AKfycbzM20GhtqKQWsV8sUf4XsozBzgvG2bHHITZX3-n8fGXcPvgDiCgF_DWvoPzubXW5M0edw/exec;
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzM20GhtqKQWsV8sUf4XsozBzgvG2bHHITZX3-n8fGXcPvgDiCgF_DWvoPzubXW5M0edw/exec"
 
 let data = {
     prenom:"",
@@ -315,3 +315,6 @@ noButton.addEventListener("click", ()=>{
 
 </body>
 </html>
+function doGet() {
+  return ContentService.createTextOutput("Le script fonctionne");
+}
